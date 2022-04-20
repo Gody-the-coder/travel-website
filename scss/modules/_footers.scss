@@ -1,0 +1,42 @@
+#footer-section{
+	height: 30vh;
+	background: $c-Darkblue;
+	color: $c-w;
+
+
+	.footer-container{
+		@extend %flex-block;
+		height: 100%;
+		justify-content: space-between;
+		
+
+		#copyright-box{
+			
+			#footer-logo, #copy-right{
+				display: block;
+			}
+
+			@extend %flex-block;
+
+		}
+
+		#social-box{
+			padding: 3rem;
+
+			a{
+				color: $c-w;
+				font-size: 2rem;
+				padding: 1rem;
+				transition: all 0.4s;
+
+				&:hover{
+					color: $c-tb;
+					font-size: 3rem;
+				}
+			}
+
+		}
+		
+
+	}
+}

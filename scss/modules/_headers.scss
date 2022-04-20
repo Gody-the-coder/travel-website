@@ -1,0 +1,66 @@
+// Home header style
+.header{
+
+	height: 95vh;
+	background: 
+		$c-TransgLinear,
+		url(../media/header-hero.jpg) no-repeat center/cover;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+
+	#logo-container{
+		position: absolute;
+		top: 40px;
+		left: 50px;
+
+		img{
+			width: 90px;
+		}
+	}
+	
+	
+	.header-container{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: $c-w;
+		text-align: center;
+
+	
+		.primary-heading{
+			
+			margin-top: -8rem;
+
+			.top-span{
+				display: block;
+				font-size: 3rem;
+				letter-spacing: 0.5rem;
+			}
+
+			.low-span{
+				display: block;
+				font-size: 1rem;
+				letter-spacing: 0.3rem;
+			}
+		}
+	
+		}
+	
+
+		.btn-primaire{
+			@extend %btn-sub;
+			border-bottom: 1px solid $c-w;
+			color: $c-w;
+			border-radius: 0;
+			text-transform: uppercase;
+			font-size: 1rem;
+			margin-top: 2.2rem;
+
+			&:hover{
+				border-bottom: none;
+			}
+		}	
+
+	}

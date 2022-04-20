@@ -1,0 +1,143 @@
+.navigation{
+
+	&-checkbox{
+		display: none;
+
+		&:checked ~ .navigation-background{
+			transform: scale(100);
+		}
+
+		&:checked ~ .navigation-nav{
+			width: 100%;
+			opacity: 1;
+			left: 0;
+
+		}
+
+		&:checked + .navigation-button .menu-icon{
+			background: transparent;
+			transition: all 0.5s;
+		}
+
+		&:checked + .navigation-button .menu-icon::before{
+			transform: rotate(45deg);
+			transition: all 0.4s;
+		}
+
+		&:checked + .navigation-button .menu-icon::after{
+			top: -3.3rem;
+			transform: rotate(-45deg);
+			transition: all 0.4s;
+		}
+	}
+
+	&-button{
+		height: 3.8rem;
+		width: 3.8rem;
+		top: 3.4rem;
+		right: 3.7rem;
+		position: fixed;
+		z-index: 10;
+		border-radius: 50%;
+		background: $c-w;
+		cursor: pointer;
+		box-shadow: 0 1px 9px 1px $c-gdDark;
+
+
+		.menu-icon{
+			height: 2px;
+			width: 2rem;
+			background: $c-tgLinear;
+			display: inline-block;
+			right: -0.9rem;
+			top: 1.2rem;
+			position: relative;
+			transition: all 0.4s;
+			
+
+			
+			&::before, &::after{
+				position: relative;
+				height: 2.5px;
+				width: 2rem;
+				left: 0;
+				background: $c-tgLinear;
+				display: inline-block;
+				content: "";
+				transition: all 0.4s;
+
+			}
+
+			&::before{
+				top:-0.3rem;
+				
+			}
+			&::after{
+				top: -2.6rem;
+				
+			}
+		}
+
+	}
+
+	&-background{
+		height: 3.3rem;
+		width: 3.5rem;
+		top: 4rem;
+		right: 4rem;
+		z-index: 5;
+		position: fixed;
+		border-radius: 50%;
+		background: radial-gradient($c-Transtg, $c-Transtgl);
+		transition: all 0.8s ease-in-out;
+		transform: scale(0);
+	}
+
+	&-nav{
+		position: fixed;
+		top: 0;
+		left: -8rem;
+		height: 100vh;
+		width: 0%;
+		opacity: 0;
+		z-index: 8;
+		transition: all 0.8s;
+
+	}
+
+	&-list{
+		width: 100%;
+		height: 100%;
+		@extend %flex-block-2;
+		
+	}
+
+	&-item{
+		background: linear-gradient(120deg, transparent 50%, $c-w 50%);
+		padding: 0.8rem 0.5rem;
+		background-size: 225%;
+		transition: all 0.5s ease-in-out;
+
+		&:not(:last-child){
+			margin-bottom: 1.5rem;
+		}
+
+
+		&:hover{
+			background-position: 100%;
+			transform: translateX(1rem);
+		}
+
+	}
+
+	&-link{
+		color: $c-w;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+
+		&:hover{
+			color: $c-Transtg;
+		}
+	
+	}
+}

@@ -1,0 +1,272 @@
+//features cards
+.feature{
+	background: $c-Transgl;
+	padding: 1.5rem;
+	border-radius: 2px;
+	text-align: center;
+	transition: transform 0.4s;
+
+	&:hover{
+		transform: translateY(-0.5rem) scale(1.03);
+	}
+
+	.fas{
+		line-height: 2;
+		font-size: 3rem;
+		background: linear-gradient(to right, $c-Transtg, $c-Transtgl);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	h5{
+		margin-bottom: 0.5rem;
+	}
+
+	p{
+		font-size: 0.8rem;
+	}
+}
+
+//tours cards
+.card{
+					
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	// height: 100%;
+	
+	
+	
+	.front-side{
+		@extend %tour-card;
+		position: absolute;
+		background: $c-w;
+		box-shadow: 3px 3px 20px 0px $c-Transblk;
+
+		#card-img-orange{
+			@extend %card-img-shared;
+			background: $cL-OrDL, url(../media/island-sea.jpg) center/cover no-repeat;
+			
+		}
+		
+		#card-img-teal{
+			@extend %card-img-shared;
+			background: $c-tgLinear, url(../media/forest.jpg) center/cover no-repeat;
+		}
+
+		#card-img-light-blue{
+			@extend %card-img-shared;
+			background: $cL-mDL, url(../media/snow.jpg) center/cover no-repeat;
+		}
+
+		.card-img{
+			position: relative;
+
+		}
+
+		.card-heading{
+			position: absolute;
+			color: $c-w;
+			text-transform: uppercase;	
+		}
+
+		.heading{
+
+			&-orange{
+				top: 9.1rem;
+				right: 1.5rem;
+				width: 45%;
+
+				span{
+					-webkit-box-decoration-break: clone;
+					background: $cL-OrDLT;
+					padding: 0.3rem 1.5rem;
+				}
+			}
+			&-teal{
+				top: 9.3rem;
+				right: 6rem;
+				width: 35%;
+
+				span{
+					-webkit-box-decoration-break: clone;
+					background: $c-TransgLinear;
+					padding: 0.3rem 1.5rem;
+				}
+			}
+			&-light-blue{
+				top: 9.2rem;
+				right: 1.7rem;
+				width: 55%;
+
+				span{
+					-webkit-box-decoration-break: clone;
+					background: $cL-mDLT;
+					padding: 0.3rem 1.5rem;
+				}
+			}
+
+		}
+
+		.card-body{
+			// padding: 2rem 1.5rem;
+
+			ul{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1.5rem;
+				list-style: none;
+				margin-top: 2.2rem;
+				
+
+				li{
+					text-transform: capitalize;
+					font-size: 0.8rem;
+					&:not(:last-child){
+						border-bottom: 1px solid $c-gl;
+						padding-bottom: 0.3rem;
+						
+					}
+
+				}
+
+				
+	
+			}
+		}
+	}
+
+	.back-side{
+		@extend %tour-card;
+		transform: rotateY(180deg);
+		box-shadow: 3px 3px 20px $c-Transblk;
+	
+
+		.back-side-content{
+			padding-top: 6rem;
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+			align-items: center;
+			color: $c-w;
+			text-transform: uppercase;
+
+			p{
+				text-align: center;
+				line-height: 2;
+
+				&:nth-child(2){
+					font-size: 3rem;
+				}
+			}
+
+			.card-btn{
+				
+				&-orange{
+					@extend %card-btn-shared;
+					color: $c-OrD;
+				}
+				&-teal{
+					@extend %card-btn-shared;
+					color: $c-tb;
+				}
+				&-light-blue{
+					@extend %card-btn-shared;
+					color: $c-MDT;
+				}
+			}
+		}
+	}
+
+	.orange{
+		background: $cL-OrDL;
+	}
+
+	.teal{
+		background-image: $c-tgLinear;
+	}
+
+	.light-blue{
+		background: $cL-mDL;
+	}
+
+	&:hover .front-side{
+		transform: rotateY(-180deg);
+	}
+
+	&:hover .back-side{
+		transform: rotateY(0);
+	}
+
+}
+
+// customers testemonials
+.t-box{
+
+	width: 80%;
+	background: $c-wT2;
+	padding: 3.5rem 5rem;
+	clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+	
+	.figure-box{
+		float: left;
+		margin-right: 1.8rem;
+		height: 8rem;
+		width: 8rem;
+		-webkit-shape-outside: circle(50% at 50% 50%);
+		-webkit-clip-path: circle(50% at 50% 50%);
+		position: relative;
+	
+
+		.figure-img{
+			width: 100%;
+			height: 100%;
+			transform: scale(1.4);
+			backface-visibility: hidden;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.img-caption{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -10%);
+			text-align: center;
+			font-size: 1.2rem;
+			color: $c-w;
+			transition: all 0.5s;
+			opacity: 0;
+		}
+	}
+
+	.text-part{
+		
+
+		h5{
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&:hover .img-caption{
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover .figure-img{
+		transform: scale(1);
+		filter: blur(3px) brightness(60%);
+	}
+
+}
+
+.book{
+	height: 27rem;
+	border-radius: 3px;
+	background: linear-gradient( 105deg,
+
+		 $c-wT 50%, transparent 50%
+
+		) ,
+		url(../media/booking-hero.jpg) center/cover;
+}

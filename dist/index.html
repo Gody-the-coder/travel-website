@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="stylesheet" href="./styles/main.css">
+
+	<title>Discover</title>
+</head>
+<body>
+
+	<!-- fixed menu -->
+	<div class="navigation">
+		<input class="navigation-checkbox" type="checkbox" name="" id="menu-toggle">
+
+		<label class="navigation-button" for="menu-toggle">
+			<span class="menu-icon">&nbsp;</span>
+		</label>
+
+		<div class="navigation-background"></div>
+
+		<nav class="navigation-nav">
+			<ul class="navigation-list">
+
+				<li class="navigation-item">
+					<a class="navigation-link" href="#about">
+						<span>01 -</span>	À propos
+					</a>
+				</li>
+
+				<li class="navigation-item">
+					<a class="navigation-link" href="#features-home">
+					<span>02 -</span>	Apprendre plus
+					</a>
+				</li>
+
+				<li class="navigation-item">
+					<a class="navigation-link" href="#tours">
+						<span>03 -</span> Nos tours
+					</a>
+				</li>
+
+				<li class="navigation-item">
+					<a class="navigation-link" href="#booking-section">
+						<span>04 -</span>	Reserver
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<!-- header -->
+	<header class="header">
+		<div id = "logo-container">
+			<img src="./media/Logo.png" alt="Logo">
+		</div>
+		<div class= "header-container">
+			<h1 class="primary-heading">
+				<span class="top-span">DANS LA NATURE</span>
+				<span class="low-span">NOUS SOMMES TOUS CONNECTÉS</span>
+			</h1>
+		
+			<a href="#tours" class="btn btn-primaire">Nos tours &rarr;</a>
+		</div>	
+	</header>
+	<main>
+		<!-- about section -->
+		<section id="about">
+			
+			<h2>Les aventureux nous sommes là pour vous</h2>
+
+			<div class="about-content">
+				<div class="content-text">
+					<h5> tu vas tomber amoureux de la nature</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis similique quas iure reiciendis.</p>
+					<h5>Aventures comme jamais auparavant</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis similique quas iure reiciendis.</p>
+
+					<a href="#booking-section">Reservation &rarr;</a>
+				</div>
+
+				<div class="content-img">
+					<div class="img-collection">
+						<img src="./media/nature-1.jpg" alt="" class="nature nature-1">
+						<img src="./media/nature-2.jpg" alt="" class="nature nature-2">
+						<img src="./media/nature-3.jpg" alt="" class="nature nature-3">
+					</div>
+				</div>
+			</div>
+			
+
+		</section>
+		<!-- features section -->
+		<section id="features-home">
+
+			<div class="features-container">
+				<div class="feature feature-box1">
+					<i class="fas fa-globe"></i>
+					<h5>Explorer le monde</h5>
+					<p>Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis.</p>
+				</div>
+				<div class="feature feature-box2">
+					<i class="fas fa-compass"></i>
+					<h5>Trouver votre chemin</h5>
+					<p>Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis.</p>
+				</div>
+				<div class="feature feature-box3">
+					<i class="fas fa-map"></i>
+					<h5>Aventures innoubliable</h5>
+					<p>Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis.</p>
+				</div>
+				<div class="feature feature-box4">
+					<i class="fas fa-heart"></i>
+					<h5>Une vie plus cool</h5>
+					<p>Repellendus porro nam enim voluptatibus dignissimos necessitatibus perferendis.</p>
+				</div>
+			</div>
+
+		</section>
+		<!-- tours section -->
+		<section id="tours">
+			<div class="tours-container">
+				<h2 id="tours-heading">Tours les plus demandé</h2>
+
+				<div class="tours-box">
+
+						<div class="card">
+							<div class="front-side orange-front">
+								<div class="card-img" id="card-img-orange"></div>
+								<!-- heading -->
+								<h3 class="card-heading heading-orange">
+									<span>Explorer la mer</span>
+								</h3>
+								<div class="card-body">
+									<ul>
+										<li>Aventure pandant 3 jours</li>
+										<li>jusqu'a 30 persones</li>
+										<li>deux guide touristiques</li>
+										<li>dormir dans un hôtel confortable</li>
+									</ul>
+								</div>
+							</div>
+							<!-- back-side -->
+							<div class="back-side orange">
+								<div class="back-side-content">
+									<div class="back-text">
+										<p>Seulment</p>
+										<p>$297</p>
+									</div>
+									<div class="btn-container">
+										<a href="#" class="card-btn-orange">
+										Reserver
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="card">
+							<div class="front-side">
+								<div id="card-img-teal"></div>
+								<!-- heading -->
+								<h3 class="card-heading heading-teal">
+									<span>randonneur forestier</span>
+								</h3>
+								<div class="card-body">
+									<ul>
+										<li>Aventure pandant 7 jours</li>
+										<li>jusqu'a 40 persones</li>
+										<li>6 guide touristiques</li>
+										<li>dormir dans des tentes fournies</li>
+									</ul>
+								</div>
+							</div>
+							<div class="back-side teal">
+								<div class="back-side-content">
+									<div class="back-text">
+										<p class="only">Seulment</p>
+										<p class="prix">$497</p>
+									</div>
+									<div class="btn-container">
+										<div class="back-btn">
+											<a href="#" class="card-btn-teal">
+												Reserver
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+						<div class="card">
+							<div class="front-side">
+								<div id="card-img-light-blue"></div>
+								<h3 class="card-heading heading-light-blue">
+									<span>aventure de neige</span>
+								</h3>
+								<div class="card-body">
+									<ul>
+										<li>Aventure pandant 4 jours</li>
+										<li>jusqu'a 20 persones</li>
+										<li>trois guide touristiques</li>
+										<li>dormir dans des tentes fournies</li>
+									</ul>
+								</div>
+							</div>
+							<div class="back-side light-blue">
+								<div class="back-side-content">
+									<div class="back-text">
+										<p class="only">Seulment</p>
+										<p class="prix">$890</p>
+									</div>
+									<div class="btn-container">
+										<div class="back-btn">
+											<a href="#" class="card-btn-light-blue">
+												Reserver
+												</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+				
+				<!-- tours bottom -->
+				<div class="btn-box">
+					<a href="#">voir plus de tours &rarr;</a>
+				</div>
+				
+			</div>
+			
+		</section>
+
+		<section id="customers">
+			<div class="t-video-container">
+				<video class="bg-video" src="./media/wave.mp4" autoplay muted loop>
+					<!-- <source src="./media/wave-2.mp4"> -->
+				</video>
+			</div>
+			
+			<!-- Customers -->
+			<div class="customers-container">
+				<div class="content-box">
+					<h2>NOUS RENDONS VRAIMENT HEUREUX LES GENS</h2>
+				</div>
+				<div class="content-box t-box">
+					<!-- <div class="t-box-content"> -->
+						<figure  class="figure-box t-box-content">
+							<img class="figure-img" src="./media/testemonial-1.jpg" alt="">
+							<figcaption class="img-caption">Jany Owens</figcaption>
+						</figure>
+					<!-- </div> -->
+					
+					<div class="text-part t-box-content">
+						<h5>Meilleur vacance que j’ai jamais passé</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas dolor soluta. Suscipit repellat officiis iusto inventore beatae aliquid, recusandae dolorum ratione, voluptas consequatur dolore voluptates perspiciatis eum, nemo at.</p>
+					</div>
+				</div>
+
+				<div class="customer-box t-box">
+					<figure class="figure-box t-box-content">
+						<img class="figure-img" src="./media/testemonial-2.jpg" alt="">
+						<figcaption class="img-caption">Jely Bob</figcaption>
+					</figure>
+					<div class="text-part">
+						<h5>WOW! MA VIE EST COMPLÈTEMENT DIFFÉRENTE MAINTENANT</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas dolor soluta. Suscipit repellat officiis iusto inventore beatae aliquid, recusandae dolorum ratione, voluptas consequatur dolore voluptates perspiciatis eum, nemo at.</p>
+					</div>
+				</div>
+
+				<div>
+					<a class="t-btn" href="#">Lire plus de temoignage &rarr;</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Booking section -->
+		<section id="booking-section">
+			<div class="book">
+				<div class="form-container">
+					<h2>Réserver maintenant</h2>
+
+					<form id="booking-form" action="">
+						<div class="form-group">
+							<input type="text" id="nom" placeholder="Nom complet">
+							<label for="nom">Nom complet</label>
+						</div>
+
+						<div class="form-group">
+							<input type="email" id="email" placeholder="Votre email">
+							<label for="email">Votre email</label>
+						</div>
+
+						<div class="form-group">
+							<!-- <input id="reserve-btn" type="submit" id="email" placeholder="Reserver"> -->
+							<button id="reserve-btn"  type="submit">Reserver &rarr;</button>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer-section">
+
+		<div class="footer-container">
+
+			<div id="social-box">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+
+
+			<div id="copyright-box">
+				<span id="copy-right"></span>
+				<img id="footer-logo" width="100px" src="./media/Logo.png" alt="discover-logo">
+				
+			</div>
+
+			
+		</div>
+
+	</footer>
+
+	<script src="https://kit.fontawesome.com/0dcf0d75cf.js" crossorigin="anonymous"></script>
+
+	<script>
+		const date = new Date().getFullYear();
+		document.getElementById('copy-right').innerHTML = `
+				Copyright &copy; ${date} Tous droit reservés
+				`;
+	</script>
+
+</body>
+</html>

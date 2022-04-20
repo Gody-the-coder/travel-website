@@ -1,0 +1,99 @@
+%btn{
+	display: inline-block;
+	text-transform: uppercase;
+	border-radius: 2px;
+	margin-top: 1.5rem;
+	cursor: pointer;
+	padding: 0.8rem;
+	transition: all 0.4s ease;
+
+	&:hover{
+		transform: translateY(-3px);
+		background: $c-tg;
+		color: $c-w;
+		letter-spacing: 4px;
+	}
+
+	&:active{
+		transform: translateX(-1px);
+	}
+}
+
+%btn-sub{
+	padding: 0.5rem;
+	color: $c-tg;
+	border-bottom: 1px solid $c-tg;
+	border-radius: 2px;
+	transition: all 0.4s ease;
+
+	&:hover{
+		background: $c-tg;
+		letter-spacing: 4px;
+		color: $c-w;
+		
+		
+	}
+}
+
+%heading-secondary{
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	background: linear-gradient(to right, $c-Transtg, $c-Transtgl);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+%flex-block{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.5rem;
+}
+
+%flex-block-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+%tour-card{
+	height: 29rem;
+	width: 19rem;
+	border-radius: 2px;
+	transition: all 0.8s ease;
+	backface-visibility: hidden;
+}
+
+%card-img-shared{
+	height: 45%;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+	background-blend-mode: screen;
+}
+
+%card-btn-shared{
+	padding: 0.8rem 1.2rem;
+	background: $c-w;
+	border-radius: 3px;
+	transition: all .4s;
+	
+	&:hover{
+		letter-spacing: 0.5rem;
+	}
+}
+
+%btn-box-shared{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -5rem;
+}
+
+%container-flex-col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4.2rem;
+}
+

@@ -1,0 +1,47 @@
+// colors
+$c-w: #fff;
+$c-wT: rgba(255, 255, 255, 0.945);
+$c-wT2: rgba(255, 255, 255, 0.637);
+$c-blk: #000;
+$c-Transblk: rgba(53, 53, 53, 0.637);
+$c-gd: rgb(83, 83, 83);
+$c-gdDark: rgb(41, 40, 40);
+$c-gl: rgb(240, 240, 240);
+$c-Transgl: rgba(245, 243, 243, 0.781);
+$c-b: blue;
+
+
+
+$c-tgl: rgb(102, 245, 121);
+
+$c-Transtg: rgba(50, 165, 65, 0.767);
+$c-Transtgl: rgba(55, 160, 128, 0.829);
+$c-TransgLinear: linear-gradient(to left bottom, $c-Transtg, $c-Transtgl);
+
+$c-tb: rgb(77, 182, 150);
+$c-tg: rgb(82, 185, 121);
+$c-tgLinear: linear-gradient(to left top, $c-tb, $c-tg);
+
+// mov
+
+$c-ML: rgb(69, 184, 219);
+$c-MD: rgb(63, 60, 231);
+$cL-mDL: linear-gradient(to left top, $c-MD, $c-ML);
+
+$c-MLT: rgba(69, 184, 219, 0.719);
+$c-MDT: rgba(63, 60, 231, 0.774);
+$cL-mDLT: linear-gradient(to left top, $c-MDT, $c-MLT);
+
+$c-Darkblue: rgb(47, 78, 70);
+$c-transBlue1: rgba(27, 79, 87, 0.685);
+$c-transBlue2: rgba(38, 59, 61, 0.747);
+
+// orange
+
+$c-OrL: rgb(255, 195, 83);
+$c-OrD: rgb(255, 145, 0);
+$cL-OrDL: linear-gradient(to right bottom, $c-OrL, $c-OrD);
+
+$c-OrLT: rgba(255, 195, 83, 0.87);
+$c-OrDT: rgba(255, 145, 0, 0.842);
+$cL-OrDLT: linear-gradient(to right bottom, $c-OrLT, $c-OrDT);
